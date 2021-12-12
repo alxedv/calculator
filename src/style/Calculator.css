@@ -1,5 +1,6 @@
 .calculator {
   align-items: center;
+  box-shadow: -5px 5px 0.2px white;
   border: 3px solid #ffffff;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,9 @@
 }
 
 .display {
+  text-shadow: -2px 2px #282c34;
   background-color: darkgreen;
+  box-shadow: -3px 3px 0.2px white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +29,7 @@
 }
 
 .button {
+  box-shadow: -3px 3px 0.2px white;
   background-color: #282c34;
   font-size: 40px;
   padding: auto;
@@ -69,6 +73,7 @@
 }
 
 .function-buttons button {
+  box-shadow: -3px 3px 0.2px white;
   background-color: #282c34;
   font-size: 40px;
   padding: auto;
@@ -86,6 +91,7 @@
 }
 
 .function-buttons button:hover {
+  box-shadow: -6px 6px 0.2px black;
   cursor: pointer;
   background-color: white;
   color: black;
@@ -97,6 +103,7 @@
 }
 
 .button:hover {
+  box-shadow: -6px 6px 0.2px black;
   cursor: pointer;
   background-color: white;
   color: black;
@@ -105,6 +112,7 @@
 
 .button:active {
   border: 3px solid black;
+  box-shadow: -6px 6px 0.2px black;
 }
 
 .erase-div {
@@ -116,6 +124,8 @@
 }
 
 .erase-div button {
+  border: 3px solid white;
+  box-shadow: -3px 3px 0.2px white;
   background-color: #282c34;
   color: white;
   border-radius: 10px;
@@ -125,8 +135,14 @@
 
 .erase-div button:hover {
   background-color: white;
+  box-shadow: -6px 6px 0.2px black;
   color: #282c34;
   transition: 0.2s;
+}
+
+.erase-div button:active {
+  border: 3px solid black;
+  box-shadow: -6px 6px 0.2px black;
 }
 
 .clear {
