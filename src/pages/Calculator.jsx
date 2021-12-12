@@ -75,50 +75,53 @@ export default class Calculator extends Component {
     const buttons = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.', '00'];
     const { selectedNum, operator } = this.state;
     return (
-      <div className="calculator">
+      <><div className="calculator">
         <div className="display">
           <div>
-            { selectedNum }
+            {selectedNum}
           </div>
           <div>
-            { operator }
+            {operator}
           </div>
         </div>
         <div className="erase-div">
-            <button
-              className="clear"
-              onClick={ this.clearNum }
-              >
-              CLEAR
-            </button>
-            <button
-              className="delete"
-              onClick={ this.deleteNum }
-            >
-              DELETE
-            </button>
-          </div>
+          <button
+            className="clear"
+            onClick={this.clearNum}
+          >
+            CLEAR
+          </button>
+          <button
+            className="delete"
+            onClick={this.deleteNum}
+          >
+            DELETE
+          </button>
+        </div>
         <div className="buttons">
           <div className="number-buttons">
             {buttons.map((element) => (
-              <button 
-              className="button"
-              onClick={ this.handleClick }
-              value={ element }
+              <button
+                className="button"
+                onClick={this.handleClick}
+                value={element}
               >
-                { element }
+                {element}
               </button>
             ))}
           </div>
           <div className="function-buttons">
-            <button onClick={ this.funcBtn } value="+">+</button>
-            <button onClick={ this.funcBtn } value="-">-</button>
-            <button onClick={ this.funcBtn } value="*">X</button>
-            <button onClick={ this.funcBtn } value="/">/</button>
-            <button onClick={ this.equal }>=</button>
+            <button onClick={this.funcBtn} value="+">+</button>
+            <button onClick={this.funcBtn} value="-">-</button>
+            <button onClick={this.funcBtn} value="*">X</button>
+            <button onClick={this.funcBtn} value="/">/</button>
+            <button onClick={this.equal}>=</button>
           </div>
         </div>
       </div>
+      <footer>
+        Criado por: Alex Maia
+      </footer></>
     )
   }
 }
